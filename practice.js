@@ -20,7 +20,7 @@ var lovesCode = false
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-var greatestFear = 5/'pizza'
+var greatestFear
 
 //////////////////PROBLEM 5////////////////////
 
@@ -36,7 +36,7 @@ var devMountainGoal = null
 //plus the value of the name parameter.
 
 function greeting(name){
-  return 'Hello ' + name
+  return 'Hello, ' + name
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -44,8 +44,8 @@ function greeting(name){
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-newGreeting = function(name){
-  return 'Hello ' + name
+var newGreeting = function(name){
+  return 'Hello, ' + name
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -89,7 +89,7 @@ function nameCheck(name){
   } else if (name === "Bryan"){
     return 'Hey Bryan!'
   } else {
-    name = NAMEPARAM
+    NAMEPARAM = name
     return 'Cool name, ' + NAMEPARAM
   }
 }
